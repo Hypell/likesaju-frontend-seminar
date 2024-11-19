@@ -6,7 +6,7 @@ export const SectionLayout = ({
   innerLayerClassName: _innerLayerClassName,
 }) => {
   const outerLayerClassName = cn(
-    'flex items-center justify-start w-screen h-screen border-b',
+    'flex items-center justify-start w-screen h-100% py-8 md:h-screen border-b',
     _outerLayerClassName,
   );
 
