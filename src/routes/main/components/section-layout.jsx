@@ -11,7 +11,7 @@ export const SectionLayout = ({
   );
 
   const innerLayerClassName = cn(
-    'relative px-[20vw] w-full flex justify-between',
+    'relative px-[10vw] md:px-[20vw] w-full flex flex-col md:flex-row justify-between py-10 md:py-0',
     _innerLayerClassName,
   );
 

@@ -53,14 +53,14 @@ export const Header = () => {
   };
 
   return (
-    <div className="w-full flex flex-row items-center justify-between bg-white drop-shadow h-[80px] px-[68px] z-[999]">
+    <div className="w-full flex flex-row items-center justify-between bg-white drop-shadow h-[80px] px-4 md:px-[68px] z-[999]">
       <Link
         to="/"
-        className="text-[26px] font-extrabold text-[#14142B] leading-9 tracking-tighter"
+        className="text-xl md:text-[26px] font-extrabold text-[#14142B] leading-9 tracking-tighter"
       >
         멋쟁이 사주처럼
       </Link>
-      <div className="flex flex-row items-center gap-[50px]">
+      <div className="flex flex-row items-center gap-4 md:gap-[50px]">
         <Link
           to="/saju"
           className={
@@ -83,11 +83,11 @@ export const Header = () => {
             onMouseOver={() => setShowProfile(true)}
             onMouseLeave={() => setShowProfile(false)}
           >
-            <span className="text-xl font-bold text-[#14142B] leading-6 hover:font-extrabold hover:text-[#4A3AFF] hover:cursor-pointer">
+            <span className="text-lg md:text-xl font-bold text-[#14142B] leading-6 hover:font-extrabold hover:text-[#4A3AFF] hover:cursor-pointer">
               프로필
             </span>
             {showProfile && (
-              <div className="absolute top-[25px] right-[-25px] bg-white drop-shadow w-[221px] p-[25px] rounded-[12px] flex flex-col gap-5">
+              <div className="absolute top-[25px] right-0 md:right-[-25px] bg-white drop-shadow w-[221px] p-[25px] rounded-[12px] flex flex-col gap-5">
                 {profileImgIndex && (
                   <div className="flex flex-row gap-[10px] items-center justify-start">
                     <ProfileImage
@@ -129,7 +129,7 @@ export const Header = () => {
         ) : (
           <Link
             to="login"
-            className="text-xl font-bold text-[#4A3AFF] leading-6 bg-[#F3F1FF] px-7 py-[17px] rounded-[50px]"
+            className="text-lg md:text-xl font-bold text-[#4A3AFF] leading-6 bg-[#F3F1FF] px-4 md:px-7 py-3 md:py-[17px] rounded-[50px]"
           >
             로그인
           </Link>
